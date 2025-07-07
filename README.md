@@ -73,12 +73,3 @@ app/
 
 ---
 
-## 👤 Auteur
-
-- kpara gedeon
-
----
-
-## 📄 Licence
-
-Ce projet est
