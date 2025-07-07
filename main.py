@@ -11,7 +11,3 @@ async def lifespan(app:FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 app.include_router(citation_controllers.router)
-
-@app.get("/citation")
-def citation_check():
-    return {"status": "runing..."}
