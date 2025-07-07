@@ -1,16 +1,20 @@
-# Citation API
+# 📚 Citation API
 
-Une API RESTful pour gérer des citations, construite avec FastAPI, SQLModel et PostgreSQL.
+Une API RESTful pour gérer des citations, construite avec **FastAPI**, **SQLAlchemy** et **PostgreSQL**.
 
-## Fonctionnalités
+---
 
-- Ajouter une citation
-- Lister toutes les citations
-- Récupérer une citation par ID
-- Mettre à jour une citation
-- Supprimer une citation
+## 🚀 Fonctionnalités
 
-## Structure du projet
+- ➕ Ajouter une citation
+- 📋 Lister toutes les citations
+- 🔍 Récupérer une citation par ID
+- ✏️ Mettre à jour une citation
+- 🗑️ Supprimer une citation
+
+---
+
+## 🗂️ Structure du projet
 
 ```
 main.py
@@ -25,7 +29,9 @@ app/
     init_db.py
 ```
 
-## Installation
+---
+
+## ⚙️ Installation
 
 1. **Cloner le dépôt**
    ```sh
@@ -46,27 +52,33 @@ app/
 
 4. **Configurer la base de données**
 
-   Modifie la variable `SQLALCHEMY_DATABSE_URL` dans [`app/core/database.py`](app/core/database.py) selon tes paramètres PostgreSQL.
+   Modifie la variable `SQLALCHEMY_DATABASE_URL` dans [`app/core/database.py`](app/core/database.py) selon tes paramètres PostgreSQL.
 
 5. **Lancer l’application**
    ```sh
    uvicorn main:app --reload
    ```
 
-## Utilisation
+---
+
+## 🛠️ Utilisation
 
 - Accède à la documentation interactive : [http://localhost:8000/docs](http://localhost:8000/docs)
-- Exemple d’endpoint :  
-  - `POST /citation/` pour ajouter une citation
-  - `GET /citation/` pour lister toutes les citations
-  - `GET /citation/{citation_id}` pour une citation spécifique
-  - `PUT /citation/{citation_id}` pour modifier une citation
-  - `DELETE /citation/{citation_id}` pour supprimer une citation
+- **Endpoints principaux :**
+  - `POST /citation/` : Ajouter une citation
+  - `GET /citation/` : Lister toutes les citations
+  - `GET /citation/{citation_id}` : Obtenir une citation spécifique
+  - `PUT /citation/{citation_id}` : Modifier une citation
+  - `DELETE /citation/{citation_id}` : Supprimer une citation
 
-## Auteurs
+---
 
-- kpara gedeon 
+## 👤 Auteur
 
-## Licence
+- kpara gedeon
 
-Ce projet est sous licence
+---
+
+## 📄 Licence
+
+Ce projet est
