@@ -8,6 +8,6 @@ async def lifespan(app:FastAPI):
     print("created")
     create_table()
     yield
-
+ 
 app = FastAPI(lifespan=lifespan)
 app.include_router(citation_controllers.router)
